@@ -1,27 +1,11 @@
-// next.config.mjs
-
-import bundleAnalyzer from '@next/bundle-analyzer';
-import webpack from 'webpack'; // Import webpack module
-
+/** 
+ * @type {import('next').NextConfig} 
+ */
 const nextConfig = {
-  // Adjust webpack options
-  webpack: (config) => {
-    // Remove files matching /__tests__/ from the bundle
-    config.plugins.push(new webpack.IgnorePlugin({
-      resourceRegExp: /\/__tests__\//,
-    }));
-    return config;
-  },
-
-  // Bundle Analyzer configuration
-  ...bundleAnalyzer({
-    enabled: process.env.ANALYZE === 'true',
-  }),
-
-  // Image optimization
+  output: 'export',
   images: {
-    domains: ['example.com'],
-  },
+    unoptimized: true,
+  }
 };
 
 export default nextConfig;
