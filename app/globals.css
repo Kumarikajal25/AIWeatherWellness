@@ -167,12 +167,10 @@
     background-clip: text;
   
   }
-  .scroll-bar::-webkit-scrollbar{
-    display: none;
-    
-  }
+  
   .scroll-bar{
     max-height: 26rem;
+
   }
   .loading-bar{
     border-radius: 4px;
@@ -192,4 +190,11 @@
 .enabled-class {
     opacity: 1;
     cursor: pointer;
+}
+.Result{
+  max-height: 30rem;
+}
+.Result::-webkit-scrollbar{
+  display: none;
+  
 }

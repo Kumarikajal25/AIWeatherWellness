@@ -9,7 +9,7 @@ export async function GET(req:NextRequest){
       const lon = searchParams.get("lon");
     
         const apiKey = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
-    
+       
         const url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}`;
         const res =  await axios.get(url).then((res)=>{
           return  res.data;

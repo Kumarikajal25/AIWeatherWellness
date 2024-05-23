@@ -9,6 +9,7 @@ export async function GET(req:NextRequest){
       const countryCode = searchParams.get("countryCode");
     
         const apiKey = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
+        console.log(apiKey);
     
         const url = `http://api.openweathermap.org/geo/1.0/zip?zip=${zipCode},${countryCode}&appid=${apiKey}`;
         const res =  await axios.get(url).then((res)=>{

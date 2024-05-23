@@ -26,7 +26,7 @@ function Visibility() {
   return (
     <div className="pt-6 pb-5 px-4 h-[12rem] border rounded-lg flex flex-col gap-8 dark:bg-dark-grey shadow-lg bg-zinc-100 hover:hover-effect  dark:hover:border-gray-900 dark:shadow-none">
       <div className="top">
-        <h2 className="flex items-center gap-2 font-bold dark:font-medium">
+        <h2 className="flex items-center gap-2 font-bold dark:font-medium ">
           {eye} Visibility
         </h2>
         <p className="pt-4 text-2xl">{Math.round(visibility / 1000)} km</p>

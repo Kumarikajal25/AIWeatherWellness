@@ -99,8 +99,8 @@ export default function Home() {
     </div>
     
     </div>
-    <footer className="py-4 flex justify-center pb-8">
-        <p className="footer-text text-sm flex items-center gap-1">
+    <footer className="py-4 flex  justify-start sm:justify-center   pb-5 sm:pb-8">
+        <p className="footer-text text-sm flex items-center gap-1  pl-3  sm:pl-0">
           Made by
           <Image 
           src={"/logo-white.svg"} alt="logo" width={20} height={20} />

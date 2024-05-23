@@ -52,13 +52,16 @@ useEffect(() => {
         <DialogTrigger asChild>
           <Button 
             variant="outline"
-            className="border inline-flex items-center justify-center text-sm font-medium hover:dark:bg-[#131313] hover:bg-slate-100  ease-in-out duration-200 overflow-hidden"
+            className="border inline-flex items-center justify-center text-sm font-medium hover:dark:bg-[#131313] hover:bg-slate-100  ease-in-out duration-200  overflow-hidden"
           >
+            <div className=" flex items-center justify-center  gap-3 sm:gap-0 sm:justify-between w-full">
             <p className="text-sm text-muted-foreground animate-bounces">  {texts[textIndex]}</p>
-            <div className="command dark:bg-[#262626] bg-slate-200  py-[2px] pl-[5px] pr-[7px] rounded-sm ml-[10rem] flex items-center gap-2 ">
+            <div className="command dark:bg-[#262626] bg-slate-200  py-[2px] pl-[5px] pr-[7px] rounded-sm sm:ml-[10rem] flex items-center gap-2 ">
               {commandIcon}
               <span className="text-[9px]">F</span>
             </div>
+            </div>
+           
           </Button>
         </DialogTrigger>
 
